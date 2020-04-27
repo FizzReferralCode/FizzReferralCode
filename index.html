@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fizz Referral Code">
+        <meta name="keywords" content="Fizz Referral Code Mobile Internet Receive Give Away Second Payment">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Fizz Referral Code</title>
+        <style>
+            #snackbar {
+                visibility: hidden;
+                min-width: 250px;
+                margin-left: -125px;
+                background-color: #2DD672;
+                color: #fff;
+                text-align: center;
+                border-radius: 2px;
+                padding: 16px;
+                position: fixed;
+                z-index: 1;
+                left: 50%;
+                bottom: 30px;
+                font-size: 17px;
+            }
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+            #snackbar.show {
+                visibility: visible;
+                -webkit-animation: fadein 0.5s, fadeout 0.5s 1s;
+                animation: fadein 0.5s, fadeout 0.5s 1s;
+            }
 
-</body>
+            @-webkit-keyframes fadein {
+                from {bottom: 0; opacity: 0;}
+                to {bottom: 30px; opacity: 1;}
+            }
+
+            @keyframes fadein {
+                from {bottom: 0; opacity: 0;}
+                to {bottom: 30px; opacity: 1;}
+            }
+
+            @-webkit-keyframes fadeout {
+                from {bottom: 30px; opacity: 1;}
+                to {bottom: 0; opacity: 0;}
+            }
+
+            @keyframes fadeout {
+                from {bottom: 30px; opacity: 1;}
+                to {bottom: 0; opacity: 0;}
+            }
+        </style>
+        <script>
+            function copyStringToClipboard () {
+                var el = document.createElement('textarea');
+                el.value = "P1354";
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container" style="background-color: #f1f1f1; padding: 10px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="fizz-1.svg" style="width: inherit">
+                </div>
+                <div class="col-md-8" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                    <h1>Fizz Referral Code</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="fizz-share.png" style="width: inherit">
+                </div>
+                <div class="col-md-8" style="text-align: center">
+                    <h1 style="color:#2DD672">Looking for Fizz Referral Code?</h1>
+                    <br>
+                    <p><b>Join Mobile or Internet Fizz and Receive 35$ OFF on your second Fizz Payment!</b></p>
+                    <br>
+                    <h4 style="color:#2DD672">Give away : Obtain 1 gig of mobile data</h4>
+                    <br>
+                    <h1 style="color:#2DD672">Referral Code : P1354</h1>
+                    <br>
+                    <button type="button" onclick="copyStringToClipboard()" class="btn btn-lg" style="background-color:#2DD672; color:white">Copie Code</button>
+                    <div id="snackbar">Copied!</div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
